@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Cat's Cookie Cutters 🍪</title>
+    <style>
+      .cutter {
+        text-align: center;
+        background: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+        border-radius: 30px;
+        margin: 50px;
+        font-size: 25px;
+        color: #fff;
+      }
+      h1 {
+        text-align: center;
+        color: #bf78d0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+        color: #bf78d0;
+        border: 2px solid #bd59d4;
+        border-radius: 5px;
+        padding: 15px;
+        font-size: 20px;
+      }
+
+      p {
+        text-align: center;
+        line-height: 1.5;
+        margin: 20px 0 10px;
+        color: #705281;
+      }
+      .world {
+        color: #bf78d0;
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      .etsy {
+        color: #705281;
+        font-size: 20px;
+        background: #e2d5ea;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .ice-cream {
+        display: left;
+        max-width: 40%;
+        border-radius: 20px;
+        margin: 20px;
+      }
+
+      .flowers {
+        display: right;
+        max-width: 40%;
+        border-radius: 20px;
+        margin: 20px;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 4px;
+        border: none;
+        color: #e2d5ea;
+        background: #705281;
+        font-size: 30px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      button:hover {
+        cursor: pointer;
+        transition: opacity 200ms ease;
+        background: #e2d5ea;
+        color: #705281;
+      }
+      h3 {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cutter">
+      <h1>Cat's Cookie Cutters 🍪</h1>
+      <h2>
+        <span class="cookie"> Custom 3D printed cookie cutters! </span>
+      </h2>
+      <br />
+      <p>
+        Welcome to <strong> Cat's Cookie Cutters </strong>, where your dream
+        cutter awaits! Printed with food safe PLA I can make almost anything you
+        imagine. I started this business as a way to get creative and make
+        cookie cutters that I couldn't find anywhere else. Drawn and printed by
+        me, I can create custom cutters with your ideas or come visit my shop to
+        see what I already have. Based in <em> Montreal, QC, </em> and ships
+        <span class="world">worldwide </span> 🗺
+
+        <a
+          class="etsy"
+          href=" https://www.etsy.com/ca/shop/catscookiecutters?ref=profile_header"
+          target="_blank"
+        >
+          <br />
+          Check out my shop 🛍
+        </a>
+      </p>
+      <hr />
+      <img
+        class="logo"
+        src="https://i.etsystatic.com/isla/a1d562/47185439/isla_500x500.47185439_pikdxw21.jpg?version=0"
+      />
+      <hr />
+      <img
+        class="ice-cream"
+        src="https://i.etsystatic.com/27356659/r/il/301bcc/3101392131/il_1588xN.3101392131_t2h8.jpg"
+      />
+      <img
+        class="flowers"
+        src=" https://i.etsystatic.com/27356659/r/il/ea2966/3046914850/il_794xN.3046914850_3wr4.jpg"
+      />
+
+      <button class="contact-button">👉🏻 Contact me</button>
+
+      <h3>Coded by: Catherine 👩🏻‍💻</h3>
+    </div>
+    <script>
+      function contact() {
+        let name = prompt("What is your name?");
+        let favourite = prompt("What is your favourite cookie?");
+        let email = prompt("What is your email?");
+        if (favourite === "none") {
+          alert(
+            "Thank you " + name + "! We'll be in touch, meanwhile enjoy some 🥛"
+          );
+        } else {
+          alert(
+            "Thank you " + name + "! We'll be in touch, meanwhile enjoy some 🍪"
+          );
+        }
+      }
+
+      let contactButton = document.querySelector(".contact-button");
+      contactButton.addEventListener("click", contact);
+    </script>
+  </body>
+</html>
